@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS | Kenyan Multi-Asset Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        body {
+            background-color: #030508;
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .terminal-border {
+            border: 1px solid #1e293b;
+            background: linear-gradient(145deg, #0f172a, #020408);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .status-pulse {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 10px #10b981;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.9); opacity: 0.6; }
+            70% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(0.9); opacity: 0.6; }
+        }
+
+        .kenyan-accent { color: #facc15; } /* Gold/Saffron for premium feel */
+        .risk-conservative { border-left: 4px solid #10b981; }
+        .risk-moderate { border-left: 4px solid #3b82f6; }
+        .risk-aggressive { border-left: 4px solid #f59e0b; }
+        .risk-speculative { border-left: 4px solid #ef4444; }
+
+        .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="p-4 lg:p-10">
+
+    <!-- Top Navigation / Status -->
+    <header class="max-w-6xl mx-auto mb-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+            <div class="flex items-center gap-3 mb-1">
+                <span class="status-pulse"></span>
+                <span class="text-[10px] font-bold tracking-[0.3em] text-slate-500 uppercase">NEXUS Intelligence • Nairobi Node</span>
+            </div>
+            <h1 class="text-5xl font-black tracking-tighter italic">NEXUS<span class="text-emerald-500">.KE</span></h1>
+            <p class="text-slate-400 text-xs mt-1 uppercase tracking-widest">Multi-Asset Intelligence for East African Markets</p>
+        </div>
+        <div class="flex gap-6 text-right">
+            <div>
+                <div class="text-[10px] text-slate-500 mono uppercase">KES/USD</div>
+                <div class="text-sm font-bold text-emerald-400 font-mono tracking-tighter">128.45 ▼</div>
+            </div>
+            <div>
+                <div class="text-[10px] text-slate-500 mono uppercase">NSE Market</div>
+                <div class="text-sm font-bold text-emerald-400">OPEN</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto space-y-8">
+        
+        <!-- 📱 NEXUS ASSET ANALYSIS REPORT SUMMARY -->
+        <section class="glass-card p-6 rounded-2xl border-l-4 border-emerald-500 shadow-2xl">
+            <h2 class="text-[11px] font-bold uppercase tracking-[0.2em] text-emerald-400 mb-3 flex items-center gap-2">
+                <i class="fas fa-satellite"></i> Executive Intelligence Summary
+            </h2>
+            <p class="text-xl leading-relaxed font-light text-slate-200">
+                The Kenyan market is stabilizing as the Central Bank signals a move towards a neutral rate environment. 
+                We observe institutional alpha in top-tier bank dividends while the new MSCI World secondary listing 
+                offers critical currency hedging for KES-based portfolios.
+            </p>
+        </section>
+
+        <!-- 4-Class Asset Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Framework 1: NSE HIGH-DIVIDEND STOCKS -->
+            <div class="terminal-border risk-conservative rounded-2xl p-8 relative">
+                <h3 class="text-emerald-400 font-bold mb-6 flex items-center gap-2 text-sm uppercase tracking-widest">
+                    <i class="fas fa-coins"></i> 🟢 HIGH-YIELD NSE DIVIDEND
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase mono mb-1">Ticker/Company</div>
+                        <div class="text-2xl font-bold">BAT (British American Tobacco Kenya)</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Current Yield</div>
+                            <div class="text-2xl font-bold text-emerald-400">13.07%</div>
+                            <div class="text-[10px] text-slate-400">Payout Ratio: 71.2%</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Health</div>
+                            <div class="text-lg font-semibold">Strong Cash Flow</div>
+                            <div class="text-[10px] text-slate-400">Ksh 60 Dividend/Share</div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                        <div class="text-[10px] text-slate-400 mb-3 uppercase font-bold tracking-widest"><i class="far fa-calendar-alt mr-2"></i> Timeline Update</div>
+                        <div class="grid grid-cols-1 text-sm gap-2 mono">
+                            <div class="flex justify-between border-b border-slate-800 pb-1"><span>Ex-Dividend:</span> <span class="text-blue-400">May 08, 2026</span></div>
+                            <div class="flex justify-between border-b border-slate-800 pb-1"><span>Record Date:</span> <span class="text-blue-400">May 08, 2026</span></div>
+                            <div class="flex justify-between text-slate-500"><span>Payment:</span> <span>Pending Announcement</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Framework 2: ETFs & SPECIAL FUNDS -->
+            <div class="terminal-border risk-moderate rounded-2xl p-8 relative">
+                <h3 class="text-blue-400 font-bold mb-6 flex items-center gap-2 text-sm uppercase tracking-widest">
+                    <i class="fas fa-globe"></i> 🔵 NEW ETF OPPORTUNITY
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase mono mb-1">Fund Name</div>
+                        <div class="text-2xl font-bold">Satrix MSCI World Feeder ETF</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase mono mb-1">Strategy Focus</div>
+                        <div class="text-sm font-medium">Global Developed Markets Equities (Secondary Listing)</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Expense Ratio</div>
+                            <div class="text-2xl font-bold">0.35%</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Denomination</div>
+                            <div class="text-lg font-semibold kenyan-accent">KES (Kenyan Shilling)</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Why Now? Provides exposure to 1,500+ global stocks (Apple, Nvidia) without the need for USD conversion, effectively hedging against local currency devaluation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Framework 3: MONEY MARKET (MM) FUNDS -->
+            <div class="terminal-border risk-conservative rounded-2xl p-8 relative">
+                <h3 class="text-slate-300 font-bold mb-6 flex items-center gap-2 text-sm uppercase tracking-widest">
+                    <i class="fas fa-vault"></i> 🛡️ MONEY MARKET STRATEGY
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase mono mb-1">Fund Name</div>
+                        <div class="text-2xl font-bold">Sanlam Allianz Money Market Fund</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Current YTM</div>
+                            <div class="text-2xl font-bold text-emerald-400">13.65%</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Credit Quality</div>
+                            <div class="text-lg font-semibold">Tier 1 Sovereign/AAA</div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-900/10 border border-blue-900/40 p-4 rounded-xl">
+                        <div class="text-[10px] font-bold text-blue-400 uppercase mb-2 tracking-widest">Nexus Risk Note</div>
+                        <p class="text-sm text-slate-300">
+                            Highest liquidity profile (T+1). Best for parking dividend income while maintaining 100% capital preservation on a risk-adjusted basis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Framework 4: NFTs & DIGITAL ASSETS -->
+            <div class="terminal-border risk-speculative rounded-2xl p-8 relative border-b-4 border-red-500">
+                <h3 class="text-red-500 font-bold mb-6 flex items-center gap-2 text-sm uppercase tracking-widest">
+                    <i class="fas fa-bolt"></i> 🟣 NFT ASYMMETRY WATCHLIST
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase mono mb-1">Collection</div>
+                        <div class="text-2xl font-bold tracking-tight">Thandiwe Muriu Series</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Blockchain</div>
+                            <div class="text-sm font-semibold">Ethereum</div>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-slate-500 uppercase mono mb-1">Floor / Vol</div>
+                            <div class="text-sm font-semibold text-purple-300">0.12 ETH / 15 ETH</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-500 uppercase mono mb-1 italic">Catalyst/Utility</div>
+                        <p class="text-sm text-slate-300">
+                            Emerging "Cultural Blue-Chip" status. Increasing floor price following the Nairobi National Museum digital exhibition.
+                        </p>
+                    </div>
+                    <div class="bg-red-950/30 border border-red-500/30 p-3 rounded text-[10px] text-red-400 flex items-start gap-2">
+                        <i class="fas fa-exclamation-triangle mt-1"></i>
+                        <span>SPECULATIVE RISK: Hyper-volatile. Liquidity remains low compared to NSE assets. Do not allocate more than 2% of total net worth.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 💡 NEXUS AI PORTFOLIO STRATEGY -->
+        <footer class="glass-card p-8 rounded-2xl border border-slate-800 shadow-inner">
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="md:w-3/4">
+                    <h3 class="text-xs font-bold text-slate-400 flex items-center gap-2 mb-4 uppercase tracking-[0.3em]">
+                        <i class="fas fa-microchip text-emerald-400"></i> NEXUS AI PORTFOLIO ALLOCATION
+                    </h3>
+                    <p class="text-slate-300 text-md leading-relaxed italic">
+                        "For the Q2 2026 Kenyan macro-environment, we favor a **Defensive-Global rotation**. 
+                        Allocate 50% to Money Market Funds (Sanlam) to capture the high interest rate floor, 
+                        30% to BAT/Stanbic for tax-efficient dividend yield, and 15% to the Satrix ETF for 
+                        global equity expansion. Maintain a 5% 'Moonshot' bucket for regional digital 
+                        collectibles (Thandiwe Muriu) to capture cultural scarcity premiums."
+                    </p>
+                </div>
+                <div class="md:w-1/4 w-full flex flex-col gap-3">
+                    <button class="w-full py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold text-sm tracking-widest transition-all uppercase">Execute via Ziidi Trader</button>
+                    <button class="w-full py-4 border border-slate-700 hover:bg-slate-800 text-slate-300 rounded-xl font-bold text-sm transition-all uppercase">Download Research PDF</button>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-[9px] text-slate-600 mono uppercase tracking-widest">
+                    Nexus ID: KES-NSE-A109 | Last API Sync: 2026-05-04 20:05:00 EAT
+                </div>
+                <div class="flex gap-4 text-slate-700 text-lg">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="mt-12 text-center text-slate-700 text-[10px] uppercase tracking-[0.4em] pb-12 font-medium">
+        Institutional Intelligence • Non-Advisory Content • NEXUS Africa v5.0
+    </div>
+
+</body>
+</html>
